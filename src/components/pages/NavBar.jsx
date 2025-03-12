@@ -1,11 +1,5 @@
-
-
 const NavBar = () => {
-    return (
-       <div>
-        This is Nav.
-       </div>
-    );
+  return <div>This is Nav.</div>;
 };
 
 export default NavBar;
