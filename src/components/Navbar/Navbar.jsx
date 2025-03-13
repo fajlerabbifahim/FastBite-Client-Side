@@ -25,7 +25,7 @@ const Navbar = () => {
                                     loading="lazy"
                                 />
                                 <h1 className="text-center flex">
-                                    <span className="text-2xl font-extrabold text-center text-white">
+                                    <span className="text-2xl font-extrabold text-center ">
                                         First Bite
                                     </span>
                                 </h1>
@@ -42,7 +42,7 @@ const Navbar = () => {
                                     {isOpen ? (
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
-                                            className="w-8 h-8 text-white"
+                                            className="w-8 h-8 "
                                             fill="none"
                                             viewBox="0 0 24 24"
                                             stroke="currentColor"
@@ -57,7 +57,7 @@ const Navbar = () => {
                                     ) : (
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
-                                            className="w-8 h-8 text-white"
+                                            className="w-8 h-8 "
                                             fill="none"
                                             viewBox="0 0 30 30"
                                             stroke="currentColor"
@@ -76,16 +76,16 @@ const Navbar = () => {
 
                         {/* Navigation Links and User Actions */}
                         <div
-                            className={`absolute inset-x-0 bg-[#C70039] z-20 w-full px-6 py-4 transition-all duration-700 ease-in-out  dark:bg-gray-800 lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:flex lg:items-center ${isOpen
+                            className={`absolute inset-x-0 bg-[#C70039] z-20 w-full px-6 py-4 transition-all duration-700 ease-in-out  lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:bg-transparent lg:w-auto lg:flex lg:items-center ${isOpen
                                 ? "translate-x-0 opacity-100 "
                                 : "opacity-0 -translate-x-full lg:opacity-100 lg:translate-x-0"
                                 }`}
                         >
-                            <div className="flex flex-col text-white -mx-6 lg:flex-row lg:items-center lg:mx-2 xl:mx-4 xl:text-lg">
+                            <div className="flex flex-col  -mx-6 lg:flex-row lg:items-center lg:mx-2 xl:mx-4 xl:text-lg">
                                 <NavLink
                                     to="/"
                                     className={({ isActive }) =>
-                                        `inline-block px-2 py-2 mx-3 mt-2 text-white transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 ${isActive ? "bg-green-500 text-white" : ""
+                                        `inline-block px-2 py-2 mx-3 mt-2  transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 ${isActive ? "" : ""
                                         }`
                                     }
                                 >
@@ -94,7 +94,7 @@ const Navbar = () => {
                                 <NavLink
                                     to="/menu"
                                     className={({ isActive }) =>
-                                        `inline-block text-white px-2 py-2 mx-3 mt-2  transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 ${isActive ? "bg-green-500 text-white" : ""
+                                        `inline-block  px-2 py-2 mx-3 mt-2  transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 ${isActive ? "" : ""
                                         }`
                                     }
                                 >
@@ -103,7 +103,7 @@ const Navbar = () => {
                                 <NavLink
                                     to="/restaurants"
                                     className={({ isActive }) =>
-                                        `inline-block px-2 py-2 mx-3 mt-2 text-white transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 ${isActive ? "bg-green-500 text-white" : ""
+                                        `inline-block px-2 py-2 mx-3 mt-2  transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 ${isActive ? "" : ""
                                         }`
                                     }
                                 >
@@ -113,7 +113,7 @@ const Navbar = () => {
                                 <NavLink
                                     to="/about"
                                     className={({ isActive }) =>
-                                        `inline-block px-2 py-2 mx-3 mt-2 text-white transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 ${isActive ? "bg-green-500 text-white" : ""
+                                        `inline-block px-2 py-2 mx-3 mt-2  transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 ${isActive ? "" : ""
                                         }`
                                     }
                                 >
@@ -122,7 +122,7 @@ const Navbar = () => {
                                 <NavLink
                                     to="/contact"
                                     className={({ isActive }) =>
-                                        `inline-block px-2 py-2 mx-3 mt-2 text-white transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 ${isActive ? "bg-green-500 text-white" : ""
+                                        `inline-block px-2 py-2 mx-3 mt-2  transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 ${isActive ? "" : ""
                                         }`
                                     }
                                 >
@@ -158,7 +158,7 @@ const Navbar = () => {
 
                                         <button
                                             onClick={handleLogout}
-                                            className="px-4 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-700 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+                                            className="px-4 py-3 text-sm font-medium tracking-wide  capitalize transition-colors duration-700 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
                                         >
                                             Logout
                                         </button>
@@ -167,13 +167,13 @@ const Navbar = () => {
                                     <div className="flex gap-2">
                                         <Link
                                             to="/signup"
-                                            className="px-4 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-700 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+                                            className="px-4 py-3 text-sm font-medium tracking-wide  capitalize transition-colors duration-700 transform rounded-lg  focus:outline-none focus:ring  focus:ring-opacity-80"
                                         >
                                             Sign up
                                         </Link>
                                         <Link
                                             to="/signin"
-                                            className="px-4 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-700 transform bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50"
+                                            className="px-4 py-3 text-sm font-medium tracking-wide  capitalize transition-colors duration-700 transform  rounded-lg  focus:outline-none focus:ring  focus:ring-opacity-50"
                                         >
                                             Sign in
                                         </Link>
