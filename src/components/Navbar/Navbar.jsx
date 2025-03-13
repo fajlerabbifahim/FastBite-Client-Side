@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <div className="sticky top-0 z-[900] ">
-            <nav className="relative  shadow  dark:bg-gray-800">
+            <nav className="relative shadow">
                 <div className="w-11/12 py-3 mx-auto">
                     <div className="lg:flex justify-between">
                         {/* Logo and Brand Name */}
@@ -166,16 +166,16 @@ const Navbar = () => {
                                 ) : (
                                     <div className="flex gap-2">
                                         <Link
-                                            to="/registration"
+                                            to="/signup"
                                             className="px-4 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-700 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
                                         >
-                                            Register
+                                            Sign up
                                         </Link>
                                         <Link
                                             to="/signin"
                                             className="px-4 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-700 transform bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50"
                                         >
-                                            Login
+                                            Sign in
                                         </Link>
                                     </div>
                                 )}
