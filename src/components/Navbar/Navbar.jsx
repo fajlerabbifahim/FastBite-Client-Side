@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <div className="sticky top-0 z-[900] ">
             <nav className="relative shadow">
-                <div className="w-11/12 py-3 mx-auto">
+                <div className="w-11/12 py-5 mx-auto">
                     <div className="lg:flex justify-between">
                         {/* Logo and Brand Name */}
                         <div className="flex items-center justify-between">
@@ -82,11 +82,30 @@ const Navbar = () => {
                                 }`}
                         >
                             <div className="flex flex-col  -mx-6 lg:flex-row lg:items-center lg:mx-2 xl:mx-4 xl:text-lg">
+
+                                {/* <NavLink
+                                    to="/"
+                                    className={({ isActive }) =>
+                                        `
+    relative inline-block px-2 py-2 mx-3 mt-2 transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:text-[#E10101] font-semibold
+    ${isActive ? "text-[#E10101] underline underline-offset-4 decoration-2" : ""}
+    before:content-[''] before:absolute before:left-0 before:bottom-0 before:h-[2px] before:bg-[#E10101] before:transition-all before:duration-300 before:ease-in-out
+    before:w-0 hover:before:w-full
+    `
+                                    }
+                                >
+                                    Home
+                                </NavLink> */}
                                 <NavLink
                                     to="/"
                                     className={({ isActive }) =>
-                                        `inline-block px-2 py-2 mx-3 mt-2  transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 ${isActive ? "" : ""
-                                        }`
+                                        `
+                                                relative inline-block px-2 py-2 mx-3 mt-2 transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:text-[#E10101] font-semibold
+                                                ${isActive ? "text-[#E10101] after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[1px] after:bg-[#E10101] after:w-full z-10" : ""}
+                                                
+                                                before:content-[''] before:absolute before:left-0 before:bottom-[-2px] before:h-[2px] before:bg-[#E10101] before:transition-all before:duration-300 before:ease-in-out before:w-0 hover:before:w-full hover:before:transition-all hover:before:duration-300 hover:before:ease-in-out
+                                                after:content-[''] after:absolute after:left-0 after:bottom-[5px] after:h-[2px] after:bg-[#E10101] after:transition-all after:duration-300 after:ease-in-out after:w-0 hover:after:w-full hover:after:transition-all hover:after:duration-300 hover:after:ease-in-out
+                                             `
                                     }
                                 >
                                     Home
@@ -94,8 +113,13 @@ const Navbar = () => {
                                 <NavLink
                                     to="/menu"
                                     className={({ isActive }) =>
-                                        `inline-block  px-2 py-2 mx-3 mt-2  transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 ${isActive ? "" : ""
-                                        }`
+                                        `
+                                                relative inline-block px-2 py-2 mx-3 mt-2 transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:text-[#E10101] font-semibold
+                                                ${isActive ? "text-[#E10101] after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[1px] after:bg-[#E10101] after:w-full z-10" : ""}
+                                                
+                                                before:content-[''] before:absolute before:left-0 before:bottom-[-2px] before:h-[2px] before:bg-[#E10101] before:transition-all before:duration-300 before:ease-in-out before:w-0 hover:before:w-full hover:before:transition-all hover:before:duration-300 hover:before:ease-in-out
+                                                after:content-[''] after:absolute after:left-0 after:bottom-[5px] after:h-[2px] after:bg-[#E10101] after:transition-all after:duration-300 after:ease-in-out after:w-0 hover:after:w-full hover:after:transition-all hover:after:duration-300 hover:after:ease-in-out
+                                             `
                                     }
                                 >
                                     Menu
@@ -103,31 +127,48 @@ const Navbar = () => {
                                 <NavLink
                                     to="/restaurants"
                                     className={({ isActive }) =>
-                                        `inline-block px-2 py-2 mx-3 mt-2  transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 ${isActive ? "" : ""
-                                        }`
+                                        `
+                                                relative inline-block px-2 py-2 mx-3 mt-2 transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:text-[#E10101] font-semibold
+                                                ${isActive ? "text-[#E10101] after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[1px] after:bg-[#E10101] after:w-full z-10" : ""}
+                                                
+                                                before:content-[''] before:absolute before:left-0 before:bottom-[-2px] before:h-[2px] before:bg-[#E10101] before:transition-all before:duration-300 before:ease-in-out before:w-0 hover:before:w-full hover:before:transition-all hover:before:duration-300 hover:before:ease-in-out
+                                                after:content-[''] after:absolute after:left-0 after:bottom-[5px] after:h-[2px] after:bg-[#E10101] after:transition-all after:duration-300 after:ease-in-out after:w-0 hover:after:w-full hover:after:transition-all hover:after:duration-300 hover:after:ease-in-out
+                                             `
                                     }
                                 >
-
                                     Restaurants
                                 </NavLink>
                                 <NavLink
                                     to="/about"
                                     className={({ isActive }) =>
-                                        `inline-block px-2 py-2 mx-3 mt-2  transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 ${isActive ? "" : ""
-                                        }`
+                                        `
+                                                relative inline-block px-2 py-2 mx-3 mt-2 transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:text-[#E10101] font-semibold
+                                                ${isActive ? "text-[#E10101] after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[1px] after:bg-[#E10101] after:w-full z-10" : ""}
+                                                
+                                                before:content-[''] before:absolute before:left-0 before:bottom-[-2px] before:h-[2px] before:bg-[#E10101] before:transition-all before:duration-300 before:ease-in-out before:w-0 hover:before:w-full hover:before:transition-all hover:before:duration-300 hover:before:ease-in-out
+                                                after:content-[''] after:absolute after:left-0 after:bottom-[5px] after:h-[2px] after:bg-[#E10101] after:transition-all after:duration-300 after:ease-in-out after:w-0 hover:after:w-full hover:after:transition-all hover:after:duration-300 hover:after:ease-in-out
+                                             `
                                     }
                                 >
                                     About Us
                                 </NavLink>
+
                                 <NavLink
                                     to="/contact"
                                     className={({ isActive }) =>
-                                        `inline-block px-2 py-2 mx-3 mt-2  transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700 ${isActive ? "" : ""
-                                        }`
+                                        `
+                                                relative inline-block px-2 py-2 mx-3 mt-2 transition-colors duration-700 transform rounded-md lg:mt-0 dark:text-gray-200 hover:text-[#E10101] font-semibold
+                                                ${isActive ? "text-[#E10101] after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[1px] after:bg-[#E10101] after:w-full z-10" : ""}
+                                                
+                                                before:content-[''] before:absolute before:left-0 before:bottom-[-2px] before:h-[2px] before:bg-[#E10101] before:transition-all before:duration-300 before:ease-in-out before:w-0 hover:before:w-full hover:before:transition-all hover:before:duration-300 hover:before:ease-in-out
+                                                after:content-[''] after:absolute after:left-0 after:bottom-[5px] after:h-[2px] after:bg-[#E10101] after:transition-all after:duration-300 after:ease-in-out after:w-0 hover:after:w-full hover:after:transition-all hover:after:duration-300 hover:after:ease-in-out
+                                             `
                                     }
                                 >
                                     Contact Us
                                 </NavLink>
+
+
                             </div>
 
                             {/* User Actions */}
@@ -167,13 +208,13 @@ const Navbar = () => {
                                     <div className="flex gap-2">
                                         <Link
                                             to="/signup"
-                                            className="px-4 py-3 text-sm font-medium tracking-wide  capitalize transition-colors duration-700 transform rounded-lg  focus:outline-none focus:ring  focus:ring-opacity-80"
+                                            className="px-4 py-3 bg-[#E10101] text-white text-sm font-medium tracking-wide  capitalize transition-colors duration-700 transform rounded-lg  focus:outline-none focus:ring  focus:ring-opacity-80"
                                         >
                                             Sign up
                                         </Link>
                                         <Link
                                             to="/signin"
-                                            className="px-4 py-3 text-sm font-medium tracking-wide  capitalize transition-colors duration-700 transform  rounded-lg  focus:outline-none focus:ring  focus:ring-opacity-50"
+                                            className="px-4 py-3 bg-[#E10101] text-white  text-sm font-medium tracking-wide  capitalize transition-colors duration-700 transform  rounded-lg  focus:outline-none focus:ring  focus:ring-opacity-50"
                                         >
                                             Sign in
                                         </Link>
